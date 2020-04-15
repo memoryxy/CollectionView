@@ -41,21 +41,13 @@
     [self.cv registerClass:YXYoulikeBaseCell.class forCellWithReuseIdentifier:NSStringFromClass(YXYoulikeBaseCell.class)];
 }
 
-- (void)collectionView:(UICollectionView *)collectionView didDeselectItemAtIndexPath:(NSIndexPath *)indexPath {
+- (void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath {
     [self.datas removeObjectAtIndex:indexPath.row];
     [collectionView performBatchUpdates:^{
         [collectionView deleteItemsAtIndexPaths:@[indexPath]];
     } completion:^(BOOL finished) {
         [self.cv reloadData];
     }];
-    
-//    [UIView animateWithDuration:1.5 animations:^{
-//        //[collectionView deleteItemsAtIndexPaths:@[indexPath]];
-//        self.view.backgroundColor = [UIColor redColor];
-//    } completion:^(BOOL finished) {
-//        NSLog(@"finish %d", finished);
-    //        [self.cv reloadData];
-//    }];
 }
 
 #pragma mark UICollectionViewDataSource

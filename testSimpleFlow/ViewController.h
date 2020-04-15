@@ -10,8 +10,6 @@
 
 @interface ViewController : UIViewController
 
-- (void)collectionView:(UICollectionView *)collectionView didDeselectItemAtIndexPath:(NSIndexPath *)indexPath;
-
 @property (nonatomic, strong) UICollectionView *cv;
 
 @end
