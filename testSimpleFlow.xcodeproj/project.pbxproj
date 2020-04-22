@@ -18,6 +18,7 @@
 		6C5EDC53243DA6D300BF1D86 /* testSimpleFlowUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C5EDC52243DA6D300BF1D86 /* testSimpleFlowUITests.m */; };
 		6C5EDC62243DB36F00BF1D86 /* YXYoulikeLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C5EDC61243DB36F00BF1D86 /* YXYoulikeLayout.m */; };
 		6C5EDC65243DB48900BF1D86 /* YXYoulikeBaseCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C5EDC64243DB48900BF1D86 /* YXYoulikeBaseCell.m */; };
+		6C88BE2C244D9D0300ECF677 /* MyCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C88BE2B244D9D0300ECF677 /* MyCell.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -60,6 +61,8 @@
 		6C5EDC61243DB36F00BF1D86 /* YXYoulikeLayout.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YXYoulikeLayout.m; sourceTree = "<group>"; };
 		6C5EDC63243DB48900BF1D86 /* YXYoulikeBaseCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YXYoulikeBaseCell.h; sourceTree = "<group>"; };
 		6C5EDC64243DB48900BF1D86 /* YXYoulikeBaseCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YXYoulikeBaseCell.m; sourceTree = "<group>"; };
+		6C88BE2A244D9D0300ECF677 /* MyCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MyCell.h; sourceTree = "<group>"; };
+		6C88BE2B244D9D0300ECF677 /* MyCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MyCell.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -116,6 +119,8 @@
 				6C5EDC2F243DA6D100BF1D86 /* SceneDelegate.m */,
 				6C5EDC31243DA6D100BF1D86 /* ViewController.h */,
 				6C5EDC32243DA6D100BF1D86 /* ViewController.m */,
+				6C88BE2A244D9D0300ECF677 /* MyCell.h */,
+				6C88BE2B244D9D0300ECF677 /* MyCell.m */,
 				6C5EDC63243DB48900BF1D86 /* YXYoulikeBaseCell.h */,
 				6C5EDC64243DB48900BF1D86 /* YXYoulikeBaseCell.m */,
 				6C5EDC60243DB36F00BF1D86 /* YXYoulikeLayout.h */,
@@ -283,6 +288,7 @@
 				6C5EDC3E243DA6D300BF1D86 /* main.m in Sources */,
 				6C5EDC30243DA6D100BF1D86 /* SceneDelegate.m in Sources */,
 				6C5EDC62243DB36F00BF1D86 /* YXYoulikeLayout.m in Sources */,
+				6C88BE2C244D9D0300ECF677 /* MyCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
