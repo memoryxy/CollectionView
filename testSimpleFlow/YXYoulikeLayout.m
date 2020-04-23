@@ -70,6 +70,7 @@
  * 内容的高度
  */
 - (CGSize)collectionViewContentSize {
+    NSLog(@"%f", MAX(self.lastY0, self.lastY1));
     return CGSizeMake(375, MAX(self.lastY0, self.lastY1));
 }
 

@@ -22,13 +22,21 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
+    UIScrollView *scroll = [[UIScrollView alloc] initWithFrame:self.view.bounds];
+    [self.view addSubview:scroll];
+    scroll.contentSize = CGSizeMake(self.view.bounds.size.width, 1540);
+    scroll.delegate = self;
+    scroll.backgroundColor = [UIColor lightGrayColor];
+    
     YXYoulikeLayout *layout = [YXYoulikeLayout new];
     self.likeLayout = layout;
     
     self.cv = [[UICollectionView alloc] initWithFrame:self.view.bounds collectionViewLayout:layout];
-    [self.view addSubview:self.cv];
+    [scroll addSubview:self.cv];
     self.cv.delegate = self;
     self.cv.dataSource = self;
+    
+    self.cv.scrollEnabled = NO;
     
     self.datas = [NSMutableArray new];
     
@@ -36,7 +44,7 @@
         [self.datas addObject:@(i)];
     }
     
-    self.cv.backgroundColor = [UIColor lightGrayColor];
+    self.cv.backgroundColor = [UIColor clearColor];
     
     [self.cv registerClass:YXYoulikeBaseCell.class forCellWithReuseIdentifier:NSStringFromClass(YXYoulikeBaseCell.class)];
 }
@@ -48,6 +56,11 @@
     } completion:^(BOOL finished) {
         [self.cv reloadData];
     }];
+}
+
+- (void)scrollViewDidScroll:(UIScrollView *)scrollView {
+    self.cv.frame = CGRectMake(0, scrollView.contentOffset.y, self.view.bounds.size.width, self.view.bounds.size.height);
+    self.cv.contentOffset = CGPointMake(0, scrollView.contentOffset.y);
 }
 
 #pragma mark UICollectionViewDataSource
