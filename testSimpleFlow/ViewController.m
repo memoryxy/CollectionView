@@ -47,7 +47,7 @@
         [collectionView deleteItemsAtIndexPaths:@[indexPath]];
     } completion:^(BOOL finished) {
         [self.cv reloadData];
-    }];   
+    }];       
 }
 
 #pragma mark UICollectionViewDataSource
