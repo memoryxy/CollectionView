@@ -47,7 +47,7 @@
         [collectionView deleteItemsAtIndexPaths:@[indexPath]];
     } completion:^(BOOL finished) {
         [self.cv reloadData];
-    }];       
+    }];
 }
 
 #pragma mark UICollectionViewDataSource
@@ -57,7 +57,7 @@
 
 - (NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section{
     return self.datas.count;
-}
+}  
 
 - (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath{
     YXYoulikeBaseCell * cell = [collectionView dequeueReusableCellWithReuseIdentifier:NSStringFromClass(YXYoulikeBaseCell.class) forIndexPath:indexPath];
