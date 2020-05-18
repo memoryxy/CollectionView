@@ -46,7 +46,7 @@
     [collectionView performBatchUpdates:^{
         [collectionView deleteItemsAtIndexPaths:@[indexPath]];
     } completion:^(BOOL finished) {
-        [self.cv reloadData];
+        [self.cv reloadData];   
     }];
 }
 
